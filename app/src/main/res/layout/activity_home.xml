@@ -397,7 +397,7 @@
         android:layout_height="81dp"
         android:layout_marginTop="4dp"
         android:background="@color/white"
-        app:itemIconSize="33dp"
+        app:itemIconSize="37dp"
         app:itemIconTint="@color/grey"
         app:itemRippleColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
