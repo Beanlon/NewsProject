@@ -6,4 +6,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="log_in">LOG IN</string>
+    <string name="title_activity_mainmenu">mainmenu</string>
 </resources>
