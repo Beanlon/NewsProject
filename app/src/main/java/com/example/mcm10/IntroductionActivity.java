@@ -17,5 +17,6 @@ public class IntroductionActivity extends AppCompatActivity {
     public void newactivity  (View view){
         Intent activity2Intent = new Intent(getApplicationContext(), LoginActivity.class);
         startActivity(activity2Intent);
+
     }
 }
