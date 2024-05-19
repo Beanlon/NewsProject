@@ -11,17 +11,18 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"/>
-
-
+        android:layout_height="770dp"
+        android:layout_weight="1" />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:itemIconTint="@color/nav_item_colors"
         android:background="@color/white"
+        app:itemIconSize="35dp"
         app:menu="@menu/bottom_nav_menu" />
 
 </LinearLayout>
