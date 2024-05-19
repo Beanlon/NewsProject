@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         frameLayout = findViewById(R.id.frameLayout);
 
+
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -53,17 +54,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
     private void loadFragment(Fragment fragment, boolean isAppInitialized) {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         if (isAppInitialized) {
-            fragmentTransaction.add(R.id.frameLayout, fragment);
+            fragmentTransaction.add(R.id.frameLayout,  fragment);
         }else {
             fragmentTransaction.replace(R.id.frameLayout, fragment);
         }
         fragmentTransaction.commit();
+
+
     }
 }
