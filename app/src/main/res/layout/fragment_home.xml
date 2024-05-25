@@ -59,7 +59,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.351" />
+                    app:layout_constraintVertical_bias="0.377" />
 
                 <ImageView
                     android:id="@+id/imageView4"
@@ -67,23 +67,23 @@
                     android:layout_height="35dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.922"
+                    app:layout_constraintHorizontal_bias="0.941"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.209"
-                    app:srcCompat="@drawable/bell_removebg_preview" />
+                    app:layout_constraintVertical_bias="0.195"
+                    app:srcCompat="@drawable/notification" />
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="39dp"
+                    android:layout_height="44dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintHorizontal_bias="0.059"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.135"
-                    app:srcCompat="@drawable/lines_removebg_preview" />
+                    app:layout_constraintVertical_bias="0.208"
+                    app:srcCompat="@drawable/menu__1_" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <HorizontalScrollView
@@ -414,96 +414,19 @@
                     android:fontFamily="@font/poppins_medium"/>
             </LinearLayout>
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <LinearLayout
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="342dp"
-                        android:layout_margin="15dp"
-                        app:cardCornerRadius="20dp">
-
-                        <ImageView
-                            android:id="@+id/imageView14"
-                            android:layout_width="458dp"
-                            android:layout_height="388dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/_40233987_843288324506245_7136292375654012650_n" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="MINDS IN MOTION"
-                        android:textColor="@color/black"
-                        android:textSize="17dp" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="6 hrs ago"
-                        android:textColor="@color/grey3"
-                        android:textSize="17dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="342dp"
-                        android:layout_margin="15dp"
-                        app:cardCornerRadius="20dp">
-
-                        <ImageView
-                            android:id="@+id/imageView16"
-                            android:layout_width="458dp"
-                            android:layout_height="388dp"
-                            android:layout_gravity="center"
-                            app:srcCompat="@drawable/screenshot_2024_05_03_220145" />
-
-                    </androidx.cardview.widget.CardView>
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="Timeless Elegance: A Vintage Soirée"
-                        android:textColor="@color/black"
-                        android:textSize="17dp" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:text="2 days ago"
-                        android:textColor="@color/grey3"
-                        android:textSize="17dp" />
-                </LinearLayout>
-
-            </LinearLayout>
+                    android:layout_height="400dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
