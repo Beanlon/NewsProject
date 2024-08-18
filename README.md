@@ -1,0 +1,1 @@
+In summary I created a basic functioning app with the basicS of app functionality along with a twist. Creating a news application for my school, comprising with using only Java. Sadly, it never got finished but I hope to finish this someday
